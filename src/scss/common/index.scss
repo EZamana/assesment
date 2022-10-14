@@ -1,0 +1,75 @@
+.hero {
+  &-banner {
+    position: relative;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 54px);
+
+    h1 {
+      font-size: 50px;
+      line-height: 58px;
+      color: #FFFFFF00;
+      font-family: Arial, sans-serif;
+      -webkit-text-stroke: 1.5px #FFFFFF;
+
+      @include mobile-large {
+        font-size: 45px;
+      }
+    }
+
+    &-line {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 13px;
+      background-image: url("../img/divider.png");
+      background-size: 100%;
+    }
+  }
+}
+
+.section-title {
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.section-title, .section-text {
+  color: black;
+  font-family: ArialMT, sans-serif;
+}
+
+.section1 {
+  padding: 80px 0 44px;
+
+  .section-title {
+    margin-bottom: 10px;
+  }
+
+  @include mobile-large {
+    padding: 50px 30px;
+  }
+}
+
+.section2 {
+  padding: 42px 0 48px;
+  background-color: $grey;
+
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  @include mobile-large {
+    padding: 35px 40px;
+
+    .section-title {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+section {
+  scroll-margin-top: 54px;
+}
+
